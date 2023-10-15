@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalapp.PlaylistController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@images/background color.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="545.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KILL BILL">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Text>
+        <Text layoutX="556.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SZA">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="52.0" layoutX="800.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/threedots.png" />
+            </image>
+        </ImageView>
+        <ImageView accessibleRole="BUTTON" fitHeight="31.0" fitWidth="33.0" layoutX="767.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/heart.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="675.0" layoutY="284.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Add to Playlist" textFill="WHITE">
+            <font>
+                <Font name="Apple SD Gothic Neo Regular" size="24.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="320.0" fitWidth="320.0" layoutX="547.0" layoutY="21.0" pickOnBounds="true">
+            <image>
+                <Image url="@images/Fotoram.io (3).png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <Line endX="191.98089599609375" endY="3.0517578125E-5" layoutX="676.0" layoutY="466.0" startX="-127.25189208984375" startY="3.0517578125E-5" />
+        <ImageView fitHeight="41.0" fitWidth="53.0" layoutX="687.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/play-button.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="41.0" fitWidth="53.0" layoutX="623.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+            <image>
+                <Image url="@images/next.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="41.0" fitWidth="53.0" layoutX="747.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/next.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="previousprevious" layoutX="609.0" layoutY="529.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Previous" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="startstart" layoutX="675.0" layoutY="529.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Resume" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="nextnext" layoutX="744.0" layoutY="529.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Next" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <VBox layoutX="7.0" prefHeight="73.0" prefWidth="150.0" />
+        <Button fx:id="FavouritesButton" alignment="CENTER" layoutX="5.0" layoutY="300.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Favourites" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="PlaylistsButton" alignment="CENTER" onAction="#ReturnPlaylist" layoutX="8.0" layoutY="254.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="Playlists" textFill="WHITE" />
+        <Button fx:id="GenreButton" alignment="CENTER" layoutX="5.0" layoutY="211.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="Genre" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="AlbumsButton" alignment="CENTER" onAction="#ReturnAlbum" layoutX="-4.0" layoutY="166.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="Albums" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="HomeButon" alignment="CENTER" onAction="#ReturnHome" layoutY="124.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label layoutX="-7.0" layoutY="73.0" prefHeight="30.0" prefWidth="169.0" text="Browse Music" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Big Caslon Medium" size="24.0" />
+            </font>
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+        </Label>
+        <Separator layoutX="170.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="17.0" />
+        <Label layoutX="195.0" layoutY="14.0" text="My Playlist" textFill="WHITE">
+            <font>
+                <Font name="Big Caslon Medium" size="48.0" />
+            </font>
+        </Label>
+        <Line endX="93.01242065429688" endY="-7.62939453125E-6" fill="WHITE" layoutX="321.0" layoutY="88.0" startX="-122.08296203613281" startY="-7.62939453125E-6" stroke="WHITE" />
+        <Button fx:id="aajjanekizidnakaro" layoutX="201.0" layoutY="107.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="237.0" style="-fx-background-color: transparent;" text="1.  Aaj Jane Ki Zid Na Karo" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="aapkinazronnesamjha" layoutX="201.0" layoutY="149.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="254.0" style="-fx-background-color: transparent;" text="2.  Aap Ki Nazron Ne Samjha" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="abhinajaochhodkar" layoutX="197.0" layoutY="194.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="3.  Abhi Na Jao Chhod Kar" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="ajibdastanhaiyeh" layoutX="201.0" layoutY="237.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: transparent;" text="4.  Ajib Dastan Hai Yeh " textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="ayekhuda" layoutX="186.0" layoutY="283.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="169.0" style="-fx-background-color: transparent;" text="5. Aye Khuda" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="badeacchelagtehai" layoutX="206.0" layoutY="324.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: transparent;" text="6.  Bade Acche lagte hai" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="bahomainchaleao" layoutX="192.0" layoutY="367.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="227.0" style="-fx-background-color: transparent;" text="7. Baho main chale aao" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="ekajnabeehaseenase" layoutX="169.0" layoutY="413.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="283.0" style="-fx-background-color: transparent;" text="8. Ek ajnabee haseena se" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="ekdinaap" layoutX="170.0" layoutY="456.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="9. Ek din aap" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="kisikimuskurahatonpe" layoutX="178.0" layoutY="501.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="283.0" style="-fx-background-color: transparent;" text="10. Kisi ki muskurahaton pe" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalapp.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="400.0" fitWidth="312.0" layoutX="-17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/BG.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="371.0" prefWidth="252.0" style="-fx-background-color: #F5F5DC;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="39.0" prefHeight="17.0" prefWidth="263.0" text="Login">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="107.0" prefHeight="29.0" prefWidth="73.0" text="Username">
+               <font>
+                  <Font name="Apple Braille" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="148.0" prefHeight="29.0" prefWidth="73.0" text="Password" textFill="#8aff1c">
+               <font>
+                  <Font name="Apple Braille" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+              <TextField fx:id="usernameTextfield" layoutX="87.0" layoutY="109.0" prefHeight="25.0" prefWidth="142.0" promptText="\@@@" />
+            <PasswordField fx:id="passwordTextField" layoutX="87.0" layoutY="150.0" prefHeight="25.0" prefWidth="142.0" promptText="* * *" />
+            <Button fx:id="loginButton" layoutX="23.0" layoutY="216.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="221.0" text="Login" />
+            <Button fx:id="cancelButton" layoutX="24.0" layoutY="267.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="221.0" text="Cancel" />
+            <Label alignment="CENTER" layoutX="47.0" layoutY="370.0" prefHeight="18.0" prefWidth="167.0" text="Copyright(c).All Rights Reserved">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="130.0" layoutY="79.0" startX="-100.0" />
+            <Label layoutX="104.0" layoutY="304.0" prefHeight="17.0" prefWidth="70.0" text="Not a user ?" />
+            <Button fx:id="SignUpButton" layoutX="103.0" layoutY="330.0" mnemonicParsing="false" onAction="#switchToSignup" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up" textFill="#0112ff">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLable" alignment="TOP_CENTER" layoutX="2.0" layoutY="191.0" prefHeight="18.0" prefWidth="274.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
